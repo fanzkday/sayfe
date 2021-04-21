@@ -1,0 +1,22 @@
+{
+  "name": "sayfe",
+  "version": "1.0.0",
+  "description": "util functions",
+  "main": "index.js",
+  "scripts": {},
+  "typings": "./types",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanzkday/sayfe.git"
+  },
+  "keywords": [
+    "tryer",
+    "calc"
+  ],
+  "author": "fanzkday",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fanzkday/sayfe/issues"
+  },
+  "homepage": "https://github.com/fanzkday/sayfe#readme"
+}
