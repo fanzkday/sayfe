@@ -1,3 +1,10 @@
 {
-  "G:\\sayfe\\demo\\subPackages\\packageCheckAccept\\common\\index": "G:\\sayfe\\demo\\subPackages\\packageCheckAccept\\index"
+  "extensions": [
+    ".js"
+  ],
+  "main": "index",
+  "root": "./demo",
+  "migrations": {
+    "/demo/testA/testC": "/demo/testB"
+  }
 }

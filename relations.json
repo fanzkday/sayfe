@@ -1,0 +1,33 @@
+{
+  "G:\\sayfe\\demo\\app": {
+    "depended": {
+      "G:\\sayfe\\demo\\common\\utils\\utils": true,
+      "G:\\sayfe\\demo\\testA\\testC\\c": true
+    },
+    "bedepended": {}
+  },
+  "G:\\sayfe\\demo\\common\\utils\\utils": {
+    "depended": {},
+    "bedepended": {
+      "G:\\sayfe\\demo\\testB\\c": true
+    }
+  },
+  "G:\\sayfe\\demo\\testA\\testC\\c": {
+    "depended": {
+      "G:\\sayfe\\demo\\testA\\testC\\common\\utils\\utils": true
+    },
+    "bedepended": {}
+  },
+  "G:\\sayfe\\demo\\testB\\c": {
+    "depended": {
+      "G:\\sayfe\\demo\\common\\utils\\utils": true
+    },
+    "bedepended": {}
+  },
+  "G:\\sayfe\\demo\\testB\\testC\\c": {
+    "depended": {
+      "G:\\sayfe\\demo\\testB\\testC\\common\\utils\\utils": true
+    },
+    "bedepended": {}
+  }
+}
