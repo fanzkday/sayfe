@@ -1,6 +1,6 @@
 type TExector<T, K> = (
   /**
-   * 当前索引, 从1开始
+   * 当前索引, 从0开始
    */
   index: number,
   /**
@@ -20,7 +20,7 @@ type TExector<T, K> = (
      */
     data: T;
   }
-) => Promise<T>;
+) => T | Promise<T>;
 
 interface ITryer<T, K> {
   /**
