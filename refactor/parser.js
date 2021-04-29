@@ -20,7 +20,7 @@ function parse (file, { getNode, getCode }) {
 
   const code = generate(ast, {}).code
   if (typeof getCode === 'function') {
-    getCode(generate(ast, {}).code)
+    getCode(code)
   }
   return code
 }

@@ -37,14 +37,13 @@ Object.entries(migrations).forEach(([from, to]) => {
   if (step !== 0) {
     shell.ls('-R', `.${from}/**/*.js`).forEach(file => {
       // 1.更新当前路径下所有文件的引用(本路径下内部的引用不会处理)
-      const code = parse(file, node => {
+      const code = parse(shell.cat(file), node => {
         node.source.value = handlerPath(node.source.value, { type, step })
       })
       fs.writeFileSync(file, code)
       // 2.更新被依赖的文件
       const key = path.resolve(file).replace('.js', '')
-      const bedependeds = relations[key].bedepended
-      Object.keys(bedependeds).forEach(bedepended => {
+      Object.keys(relations[key]).forEach(bedepended => {
         parse(shell.cat(bedepended + '.js'), {
           getNode: node => {
             if (path.resolve(node.source.value) === key) {
