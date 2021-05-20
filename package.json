@@ -4,6 +4,9 @@
   "description": "util functions",
   "main": "index.js",
   "scripts": {},
+  "bin": {
+    "gi": "./lib/toInterface.js"
+  },
   "typings": "./types",
   "repository": {
     "type": "git",
