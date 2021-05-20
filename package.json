@@ -1,6 +1,6 @@
 {
   "name": "sayfe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "util functions",
   "main": "index.js",
   "scripts": {},
