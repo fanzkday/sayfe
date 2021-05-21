@@ -68,8 +68,14 @@ calc("(0.1+0.2)*0.2").value; // 0.06
 }
 ```
 
+```
+注意: 文件命名规则, 默认取 *左侧菜单分类的备注* 命名; 未设置备注的情况下, 固定以api.${uid}命名
+```
+
 - 执行
 
 ```shell
 node ./node_modules/sayfe/lib/toInferface.js
+or
+npx gi
 ```
