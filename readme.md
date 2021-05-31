@@ -63,7 +63,13 @@ calc("(0.1+0.2)*0.2").value; // 0.06
     "host": "http://x.x.x.x:8080", // 服务器地址
     "token": "9de5079657fe9393a481d49f7d60dfde0f770789200df339508998257ab9de7a", // 项目的token
     "projectId": "80", // 项目的id
-    "outDir": "src/yapis" // 输出目录
+    "outDir": "src/yapis", // 输出目录
+    "enumKeys": {
+      // 指定常用字段的类型; 此处设置的类型优先级最高
+      "current": "number",
+      "size": "number",
+      "total": "number"
+    }
   }
 }
 ```
