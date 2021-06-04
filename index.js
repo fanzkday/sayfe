@@ -1,2 +1,4 @@
-export { tryer } from './lib/tryer'
-export { calc } from './lib/calc'
+const { tryer } = require('./lib/tryer')
+const { calc } = require('./lib/calc')
+
+module.exports = { calc, tryer }
